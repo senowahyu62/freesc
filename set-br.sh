@@ -1,7 +1,7 @@
 #!/bin/bash
 curl https://rclone.org/install.sh | bash
 printf "q\n" | rclone config
-wget -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/Daorakle/Daorakle/main/rclone.conf"
+wget -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/senowahyu62/freesc/main/rclone.conf"
 git clone  https://github.com/magnific0/wondershaper.git
 cd wondershaper
 make install
@@ -26,12 +26,12 @@ logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
 cd /usr/bin
-wget -O autobackup "https://raw.githubusercontent.com/Daorakle/Daorakle/main/autobackup.sh"
-wget -O backup "https://raw.githubusercontent.com/Daorakle/Daorakle/main/backup.sh"
-wget -O bckp "https://raw.githubusercontent.com/Daorakle/Daorakle/main/bckp.sh"
-wget -O restore "https://raw.githubusercontent.com/Daorakle/Daorakle/main/restore.sh"
-wget -O strt "https://raw.githubusercontent.com/Daorakle/Daorakle/main/strt.sh"
-wget -O limit-speed "https://raw.githubusercontent.com/Daorakle/Daorakle/main/limit-speed.sh"
+wget -O autobackup "https://raw.githubusercontent.com/senowahyu62/freesc/main/autobackup.sh"
+wget -O backup "https://raw.githubusercontent.com/senowahyu62/freesc/main/backup.sh"
+wget -O bckp "https://raw.githubusercontent.com/senowahyu62/freesc/main/bckp.sh"
+wget -O restore "https://raw.githubusercontent.com/senowahyu62/freesc/main/restore.sh"
+wget -O strt "https://raw.githubusercontent.com/senowahyu62/freesc/main/strt.sh"
+wget -O limit-speed "https://raw.githubusercontent.com/senowahyu62/freesc/main/limit-speed.sh"
 chmod +x autobackup
 chmod +x backup
 chmod +x bckp

@@ -21,7 +21,7 @@ commonname=geoganteng.tech
 email=paoandest@gmail.com
 
 # simple password minimal
-wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/Daorakle/Daorakle/main/password"
+wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/senowahyu62/freesc/main/password"
 chmod +x /etc/pam.d/common-password
 
 # go to root
@@ -88,14 +88,14 @@ apt -y install nginx
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/Daorakle/Daorakle/main/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/senowahyu62/freesc/main/nginx.conf"
 mkdir -p /home/vps/public_html
-wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/Daorakle/Daorakle/main/vps.conf"
+wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/senowahyu62/freesc/main/vps.conf"
 /etc/init.d/nginx restart
 
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/Daorakle/Daorakle/main/badvpn-udpgw64"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/senowahyu62/freesc/main/badvpn-udpgw64"
 chmod +x /usr/bin/badvpn-udpgw
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500' /etc/rc.local
@@ -125,7 +125,7 @@ echo "/usr/sbin/nologin" >> /etc/shells
 # install squid
 cd
 apt -y install squid3
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/Daorakle/Daorakle/main/squid3.conf"
+wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/senowahyu62/freesc/main/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 # setting vnstat
@@ -216,7 +216,7 @@ echo 'Config file is at /usr/local/ddos/ddos.conf'
 echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 
 # banner /etc/issue.net
-wget -O /etc/issue.net "https://raw.githubusercontent.com/Daorakle/Daorakle/main/banner.conf"
+wget -O /etc/issue.net "https://raw.githubusercontent.com/senowahyu62/freesc/main/banner.conf"
 echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
@@ -239,52 +239,52 @@ netfilter-persistent reload
 
 # download script
 cd /usr/bin
-wget -O add-host "https://raw.githubusercontent.com/Daorakle/Daorakle/main/add-host.sh"
-wget -O about "https://raw.githubusercontent.com/Daorakle/Daorakle/main/about.sh"
-wget -O menu "https://raw.githubusercontent.com/Daorakle/Daorakle/main/menu.sh"
-wget -O usernew "https://raw.githubusercontent.com/Daorakle/Daorakle/main/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/Daorakle/Daorakle/main/trial.sh"
-wget -O hapus "https://raw.githubusercontent.com/Daorakle/Daorakle/main/hapus.sh"
-wget -O member "https://raw.githubusercontent.com/Daorakle/Daorakle/main/member.sh"
-wget -O delete "https://raw.githubusercontent.com/Daorakle/Daorakle/main/delete.sh"
-wget -O cek "https://raw.githubusercontent.com/Daorakle/Daorakle/main/cek.sh"
-wget -O restart "https://raw.githubusercontent.com/Daorakle/Daorakle/main/restart.sh"
-wget -O speedtest "https://raw.githubusercontent.com/Daorakle/Daorakle/main/speedtest_cli.py"
-wget -O info "https://raw.githubusercontent.com/Daorakle/Daorakle/main/info.sh"
-wget -O ram "https://raw.githubusercontent.com/Daorakle/Daorakle/main/ram.sh"
-wget -O renew "https://raw.githubusercontent.com/Daorakle/Daorakle/main/renew.sh"
-wget -O autokill "https://raw.githubusercontent.com/Daorakle/Daorakle/main/autokill.sh"
-wget -O ceklim "https://raw.githubusercontent.com/Daorakle/Daorakle/main/ceklim.sh"
-wget -O tendang "https://raw.githubusercontent.com/Daorakle/Daorakle/main/tendang.sh"
-wget -O clear-log "https://raw.githubusercontent.com/Daorakle/Daorakle/main/clear-log.sh"
-wget -O change-port "https://raw.githubusercontent.com/Daorakle/Daorakle/main/change.sh"
-wget -O port-ovpn "https://raw.githubusercontent.com/Daorakle/Daorakle/main/port-ovpn.sh"
-wget -O port-ssl "https://raw.githubusercontent.com/Daorakle/Daorakle/main/port-ssl.sh"
-wget -O port-wg "https://raw.githubusercontent.com/Daorakle/Daorakle/main/port-wg.sh"
-wget -O port-tr "https://raw.githubusercontent.com/Daorakle/Daorakle/main/port-tr.sh"
-wget -O port-sstp "https://raw.githubusercontent.com/Daorakle/Daorakle/main/port-sstp.sh"
-wget -O port-squid "https://raw.githubusercontent.com/Daorakle/Daorakle/main/port-squid.sh"
-wget -O port-ws "https://raw.githubusercontent.com/Daorakle/Daorakle/main/port-ws.sh"
-wget -O port-vless "https://raw.githubusercontent.com/Daorakle/Daorakle/main/port-vless.sh"
-wget -O wbmn "https://raw.githubusercontent.com/Daorakle/Daorakle/main/webmin.sh"
-wget -O clear-log "https://raw.githubusercontent.com/Daorakle/Daorakle/main/clear-log.sh"
-wget -O xp "https://raw.githubusercontent.com/Daorakle/Daorakle/main/xp.sh"
-wget -O /usr/bin/user-limit https://raw.githubusercontent.com/Daorakle/Daorakle/main/user-limit.sh && chmod +x /usr/bin/user-limit
-wget -O cfd "https://raw.githubusercontent.com/Daorakle/Daorakle/main/cfd.sh"
-wget -O cff "https://raw.githubusercontent.com/Daorakle/Daorakle/main/cff.sh"
-wget -O cfh "https://raw.githubusercontent.com/Daorakle/Daorakle/main/cfh.sh"
-wget -O autoreboot "https://raw.githubusercontent.com/Daorakle/Daorakle/main/autoreboot.sh"
-wget -O bannerku "https://raw.githubusercontent.com/Daorakle/Daorakle/main/menu-all/bannerku"
-wget -O bbr "https://raw.githubusercontent.com/Daorakle/Daorakle/main/menu-all/bbr.sh"
-wget -O menu "https://raw.githubusercontent.com/Daorakle/Daorakle/main/menu-all/menu.sh"
-wget -O trojaan "https://raw.githubusercontent.com/Daorakle/Daorakle/main/menu-all/trojaan.sh"
-wget -O vleess "https://raw.githubusercontent.com/Daorakle/Daorakle/main/menu-all/vleess.sh"
-wget -O wgr "https://raw.githubusercontent.com/Daorakle/Daorakle/main/menu-all/wgr.sh"
-wget -O l2tp "https://raw.githubusercontent.com/Daorakle/Daorakle/main/menu-all/l2tp.sh"
-wget -O v2raay "https://raw.githubusercontent.com/Daorakle/Daorakle/main/menu-all/v2raay.sh"
-wget -O ssh "https://raw.githubusercontent.com/Daorakle/Daorakle/main/menu-all/ssh.sh"
-wget -O sstpp "https://raw.githubusercontent.com/Daorakle/Daorakle/main/menu-all/sstpp.sh"
-wget -O ssssr "https://raw.githubusercontent.com/Daorakle/Daorakle/main/menu-all/ssssr.sh"
+wget -O add-host "https://raw.githubusercontent.com/senowahyu62/freesc/main/add-host.sh"
+wget -O about "https://raw.githubusercontent.com/senowahyu62/freesc/main/about.sh"
+wget -O menu "https://raw.githubusercontent.com/senowahyu62/freesc/main/menu.sh"
+wget -O usernew "https://raw.githubusercontent.com/senowahyu62/freesc/main/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/senowahyu62/freesc/main/trial.sh"
+wget -O hapus "https://raw.githubusercontent.com/senowahyu62/freesc/main/hapus.sh"
+wget -O member "https://raw.githubusercontent.com/senowahyu62/freesc/main/member.sh"
+wget -O delete "https://raw.githubusercontent.com/senowahyu62/freesc/main/delete.sh"
+wget -O cek "https://raw.githubusercontent.com/senowahyu62/freesc/main/cek.sh"
+wget -O restart "https://raw.githubusercontent.com/senowahyu62/freesc/main/restart.sh"
+wget -O speedtest "https://raw.githubusercontent.com/senowahyu62/freesc/main/speedtest_cli.py"
+wget -O info "https://raw.githubusercontent.com/senowahyu62/freesc/main/info.sh"
+wget -O ram "https://raw.githubusercontent.com/senowahyu62/freesc/main/ram.sh"
+wget -O renew "https://raw.githubusercontent.com/senowahyu62/freesc/main/renew.sh"
+wget -O autokill "https://raw.githubusercontent.com/senowahyu62/freesc/main/autokill.sh"
+wget -O ceklim "https://raw.githubusercontent.com/senowahyu62/freesc/main/ceklim.sh"
+wget -O tendang "https://raw.githubusercontent.com/senowahyu62/freesc/main/tendang.sh"
+wget -O clear-log "https://raw.githubusercontent.com/senowahyu62/freesc/main/clear-log.sh"
+wget -O change-port "https://raw.githubusercontent.com/senowahyu62/freesc/main/change.sh"
+wget -O port-ovpn "https://raw.githubusercontent.com/senowahyu62/freesc/main/port-ovpn.sh"
+wget -O port-ssl "https://raw.githubusercontent.com/senowahyu62/freesc/main/port-ssl.sh"
+wget -O port-wg "https://raw.githubusercontent.com/senowahyu62/freesc/main/port-wg.sh"
+wget -O port-tr "https://raw.githubusercontent.com/senowahyu62/freesc/main/port-tr.sh"
+wget -O port-sstp "https://raw.githubusercontent.com/senowahyu62/freesc/main/port-sstp.sh"
+wget -O port-squid "https://raw.githubusercontent.com/senowahyu62/freesc/main/port-squid.sh"
+wget -O port-ws "https://raw.githubusercontent.com/senowahyu62/freesc/main/port-ws.sh"
+wget -O port-vless "https://raw.githubusercontent.com/senowahyu62/freesc/main/port-vless.sh"
+wget -O wbmn "https://raw.githubusercontent.com/senowahyu62/freesc/main/webmin.sh"
+wget -O clear-log "https://raw.githubusercontent.com/senowahyu62/freesc/main/clear-log.sh"
+wget -O xp "https://raw.githubusercontent.com/senowahyu62/freesc/main/xp.sh"
+wget -O /usr/bin/user-limit https://raw.githubusercontent.com/senowahyu62/freesc/main/user-limit.sh && chmod +x /usr/bin/user-limit
+wget -O cfd "https://raw.githubusercontent.com/senowahyu62/freesc/main/cfd.sh"
+wget -O cff "https://raw.githubusercontent.com/senowahyu62/freesc/main/cff.sh"
+wget -O cfh "https://raw.githubusercontent.com/senowahyu62/freesc/main/cfh.sh"
+wget -O autoreboot "https://raw.githubusercontent.com/senowahyu62/freesc/main/autoreboot.sh"
+wget -O bannerku "https://raw.githubusercontent.com/senowahyu62/freesc/main/menu-all/bannerku"
+wget -O bbr "https://raw.githubusercontent.com/senowahyu62/freesc/main/menu-all/bbr.sh"
+wget -O menu "https://raw.githubusercontent.com/senowahyu62/freesc/main/menu-all/menu.sh"
+wget -O trojaan "https://raw.githubusercontent.com/senowahyu62/freesc/main/menu-all/trojaan.sh"
+wget -O vleess "https://raw.githubusercontent.com/senowahyu62/freesc/main/menu-all/vleess.sh"
+wget -O wgr "https://raw.githubusercontent.com/senowahyu62/freesc/main/menu-all/wgr.sh"
+wget -O l2tp "https://raw.githubusercontent.com/senowahyu62/freesc/main/menu-all/l2tp.sh"
+wget -O v2raay "https://raw.githubusercontent.com/senowahyu62/freesc/main/menu-all/v2raay.sh"
+wget -O ssh "https://raw.githubusercontent.com/senowahyu62/freesc/main/menu-all/ssh.sh"
+wget -O sstpp "https://raw.githubusercontent.com/senowahyu62/freesc/main/menu-all/sstpp.sh"
+wget -O ssssr "https://raw.githubusercontent.com/senowahyu62/freesc/main/menu-all/ssssr.sh"
 chmod +x add-host
 chmod +x script-info
 chmod +x menu
