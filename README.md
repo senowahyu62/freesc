@@ -33,7 +33,19 @@ apt update -y && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv
 
 
 [Senowahyu62](https://t.me/senowahyu62)
+
+
+
+
 [Senovpn](https://t.me/senovpn)
+
+
+
+
 donate ?
-*Dana* 
+
+
+
+
+**Dana** 
 082220155143
