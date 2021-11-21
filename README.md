@@ -29,14 +29,7 @@ apt update -y && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv
 
 
 
-
-
-
-[Senowahyu62](https://t.me/senowahyu62)
-
-
-
-
+**Telegram**
 [Senovpn](https://t.me/senovpn)
 
 
