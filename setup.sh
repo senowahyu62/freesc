@@ -120,12 +120,12 @@ echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "   - Dev/Main                : DA ORAKLE"  | tee -a log-install.txt
-echo "   - Telegram                : T.me/daorakle"  | tee -a log-install.txt
-echo "   - Instagram               : @harjarlah"  | tee -a log-install.txt
-echo "   - Whatsapp                : 08037680771"  | tee -a log-install.txt
-echo "   - Facebook                : https://www.facebook.com/Harjarlah" | tee -a log-install.txt
-echo "------------------Script Created By orakle-----------------" | tee -a log-install.txt
+echo "   - Dev/Main                : senovpn"  | tee -a log-install.txt
+echo "   - Telegram                : t.me/senovpn"  | tee -a log-install.txt
+echo "   - Instagram               : @senowahyu62"  | tee -a log-install.txt
+echo "   - Whatsapp                : 082220155143"  | tee -a log-install.txt
+echo "   - Facebook                : https://www.facebook.com/senowahyu62" | tee -a log-install.txt
+echo "------------------Script Created By Senovpn-----------------" | tee -a log-install.txt
 echo ""
 echo " Reboot 10 Sec"
 sleep 10
