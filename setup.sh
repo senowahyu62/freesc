@@ -36,7 +36,7 @@ wget https://raw.githubusercontent.com/senowahyu62/freesc/main/sodosok.sh && chm
 #installwg
 wget https://raw.githubusercontent.com/senowahyu62/freesc/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 #install v2ray
-wget http://raw.githubusercontent.com/Daorakle/Daorakle/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
+wget https://raw.githubusercontent.com/senowahyu62/freesc/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
 #install L2TP
 wget https://raw.githubusercontent.com/senowahyu62/freesc/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 wget https://raw.githubusercontent.com/senowahyu62/freesc/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
