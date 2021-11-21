@@ -42,6 +42,5 @@ donate ?
 
 
 
-
-**Dana** 
+Donate? **Via Dana** 
 082220155143
