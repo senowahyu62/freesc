@@ -2,7 +2,10 @@
 **For Debian and Ubuntu** 
 
 
-![FOTO](https://raw.githubusercontent.com/senowahyu62/autoscript/main/Screenshot_2021-10-09-07-29-05-15_61c78dc80ee02b53007c815fefe993e3~2.jpg)
+![FOTO](https://github.com/senowahyu62/freesc/raw/main/Screenshot%202021-11-21%2019:18:49.png)
+
+![FOTO](https://github.com/senowahyu62/freesc/raw/main/Screenshot%202021-11-21%2019:19:29.png)
+
 
 __Command To Install__
 
