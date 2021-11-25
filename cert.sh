@@ -8,7 +8,7 @@ clear
 echo start
 sleep 0.5
 source /var/lib/premium-script/ipvps.conf
-domain=$IP
+domain="$(cat /etc/v2ray/domain)"
 sudo lsof -t -i tcp:442 -s tcp:listen | sudo xargs kill
 
 cd /root/
