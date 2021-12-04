@@ -1,7 +1,6 @@
 #!/bin/bash
 apt update
-apt upgrade -y
-wget https://download.nomachine.com/download/7.7/Linux/nomachine_7.7.4_1_amd64.deb
-apt install ubuntu-desktop -y
-chmod +x nomachine_7.7.4_1_amd64.deb
-apt install ./nomachine_7.7.4_1_amd64.deb
+apt install task-xfce-desktop -y
+systemctl set-default graphical.target
+apt install xrdp tigervnc-standalone-server -y
+curl ipinfo.io
