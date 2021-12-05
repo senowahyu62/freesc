@@ -9,7 +9,7 @@ echo start
 sleep 0.5
 source /var/lib/premium-script/ipvps.conf
 domain="$(cat /etc/v2ray/domain)"
-sudo lsof -t -i tcp:442 -s tcp:listen | sudo xargs kill
+sudo lsof -t -i tcp:80 -s tcp:listen | sudo xargs kill
 
 cd /root/
 wget https://raw.githubusercontent.com/acmesh-official/acme.sh/master/acme.sh
