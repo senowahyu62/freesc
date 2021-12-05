@@ -6,7 +6,7 @@ MYIP=$(wget -qO- icanhazip.com);
 echo "Script By geo"
 clear
 apt install jq curl -y
-DOMAIN=daorakle.website
+DOMAIN=installer.my.id
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
 SUB_DOMAIN=${sub}.installer.my.id
 CF_ID=senowahyu62@gmail.com
@@ -38,6 +38,7 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
      -H "Content-Type: application/json" \
      --data '{"type":"A","name":"'${SUB_DOMAIN}'","content":"'${IP}'","ttl":120,"proxied":false}')
 echo "Host : $SUB_DOMAIN"
+rm -rf /root/domain
 echo $SUB_DOMAIN > /root/domain
 cp /root/domain /etc/v2ray/domain
 rm -f /root/cf.sh
