@@ -249,7 +249,11 @@ wget -O member "https://raw.githubusercontent.com/senowahyu62/freesc/main/member
 wget -O delete "https://raw.githubusercontent.com/senowahyu62/freesc/main/delete.sh"
 wget -O cek "https://raw.githubusercontent.com/senowahyu62/freesc/main/cek.sh"
 wget -O restart "https://raw.githubusercontent.com/senowahyu62/freesc/main/restart.sh"
-wget -O speedtest "https://raw.githubusercontent.com/senowahyu62/freesc/main/speedtest_cli.py"
+#wget -O speedtest "https://raw.githubusercontent.com/senowahyu62/freesc/main/speedtest_cli.py"
+#install speedtest
+apt-get install curl
+curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash
+apt-get install speedtest -y
 wget -O info "https://raw.githubusercontent.com/senowahyu62/freesc/main/info.sh"
 wget -O ram "https://raw.githubusercontent.com/senowahyu62/freesc/main/ram.sh"
 wget -O renew "https://raw.githubusercontent.com/senowahyu62/freesc/main/renew.sh"
